@@ -3,7 +3,7 @@ import './App.css';
 import React, { Component } from 'react';
 
 
-class App2 extends Component {
+class App extends Component {
 
   constructor(props) {
     super(props);
@@ -29,7 +29,7 @@ class App2 extends Component {
           >
             Learn React
           </a>
-          <Welcome name="Popescu" prenume="Mihai" />
+          <Welcome name="Stoica" prenume="Andrei" />
         </header>
       </div>
     );
@@ -40,4 +40,4 @@ class App2 extends Component {
     return <h1>Bine ai venit { props.name } { props.prenume } la React</h1>
   }
 
-export default App2;
+export default App;
