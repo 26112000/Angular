@@ -7,6 +7,5 @@ export interface User {
     telefon: string,
     dataadaugare?:Date,
     actiune?:string,
-    poza?:string,
-    users?:any
+    'users'?:any
 }

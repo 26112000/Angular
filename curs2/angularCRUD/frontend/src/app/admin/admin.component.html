@@ -48,14 +48,6 @@
           <small id="anHealp" class="form-text text-muted">Format:2022-01-01</small>
         </div>
         <input [(ngModel)]="selectedUser.id" name="id" type="hidden" class="form-control" id="id">
-        
-        <div class="form-group">
-          <label for="poza">An</label>
-          <input [(ngModel)]="selectedUser.poza" name="poza" type="text" class="form-control" id="poza"
-            aria-describedby="pozaHealp">
-          <small id="pozaHealp" class="form-text text-muted">Format:2022-01-01</small>
-        </div>
-        <input [(ngModel)]="selectedUser.id" name="id" type="hidden" class="form-control" id="id">
   
   
   
@@ -71,9 +63,7 @@
           <th scope="col">Nume</th>
           <th scope="col">Prenume</th>
           <th scope="col">Email</th>
-          <th scope="col">Poza</th>
           <th scope="col">Operatii</th>
-          
         </tr>
       </thead>
       <tbody>
@@ -82,7 +72,6 @@
           <td>{{ user.nume }}</td>
           <td>{{ user.prenume }}</td>
           <td>{{ user.email }}</td>
-          <td> <img (src)="user.poza" alt="{{user.nume}}" width="150" height="100"></td>
           <td>
             <button type="button" class="btn btn-primary" (click)="deleteUser(user.id)">Delete</button>
             <button type="button" class="btn btn-danger" (click)="selectUser(user)">Update</button>

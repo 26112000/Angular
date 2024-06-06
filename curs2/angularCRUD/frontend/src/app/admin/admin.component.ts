@@ -9,7 +9,7 @@ import { ApiService } from '../api.service';
 })
 export class AdminComponent implements OnInit {
   users: any[]=[];
-  selectedUser: User = { id: 0, nume: '', prenume: '',email:'',datanastere:new Date() ,telefon:'' ,poza:''};
+  selectedUser: User = { id: 0, nume: '', prenume: '',email:'',datanastere:new Date() ,telefon:''};
   
   constructor(private apiService: ApiService) {}
 
