@@ -33,7 +33,7 @@ return (
 	<td>{cnp}</td>
 	<td>{format(parseISO(datanastere),'yyyy-MM-dd')}</td>
 	<td>{format(parseISO(dataadaugare),'yyyy-MM-dd')}</td>
-	<td><img style={styleImg} src={poza}/></td>
+	<td><img style={styleImg} src={poza} alt={nume}/></td>
 	<td>
 		<Link className="edit-link"
 		to={"/edit-user/" + id}>

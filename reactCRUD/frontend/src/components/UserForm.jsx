@@ -68,6 +68,14 @@ const UserForm = (props) => {
                             className="d-block invalid-feedback"
                             component="span"
                         />
+                         <label htmlFor="poza">Poza</label>
+                        <Field name="poza" type="url"
+                            className="form-control" />
+                        <ErrorMessage
+                            name="poza"
+                            className="d-block invalid-feedback"
+                            component="span"
+                        />
                     </FormGroup>
                     <FormGroup>
                         <label htmlFor="cnp">CNP</label>

@@ -15,6 +15,7 @@ const [formValues, setFormValues] = useState({
 	prenume: "",
 	email: "",
     telefon:"",
+	poza:"",
     cnp:"",
 	datanastere:''
 });
@@ -43,15 +44,14 @@ const onSubmit = (userObject) => {
 useEffect(() => {
 	axios
 	.get(
-		configData.SERVER_URL + id
-	)
+		configData.SERVER_URL + id)
 	.then((res) => {
         console.log(res);
-		const { id, nume, prenume, email,telefon,cnp} = res.data['users'];
-		const mydate = res.data['users'].datanastere;
+		const { id, nume, prenume, email,telefon,poza,cnp} = res.data['data'];
+		const mydate = res.data['data'].datanastere;
 		let datanastere = format(parseISO(mydate),'yyyy-MM-dd');
 		
-		setFormValues({ id, nume, prenume, email,telefon,cnp,datanastere });
+		setFormValues({ id, nume, prenume, email, telefon, poza, cnp, datanastere});
 	})
 	.catch((err) => console.log(err));
 },[id]);
